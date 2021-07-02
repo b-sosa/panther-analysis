@@ -1,0 +1,17 @@
+AnalysisType: rule
+DisplayName: GCAL_PUBLIC_READ
+Enabled: true
+Filename: gcal_public_read.py
+RuleID: Custom.GCAL_PUBLIC_READ
+Severity: High
+LogTypes:
+  - GSuite.ActivityEvent
+  - GSuite.Reports
+Tests:
+  -
+    Name: TEST-GCAL-READ
+    LogType: GSuite.ActivityEvent
+    ExpectedResult: false
+    Log:
+      {"id":{"applicationName":"calendar","customerId":"C02r033ci","time":"2021-06-29 13:34:51.478000000","uniqueQualifier":"6010905172158846850"},"actor":{"email":"chandler@guildeducation.com","profileId":"102845578208880299772"},"kind":"admin#reports#activity","ownerDomain":"guildeducation.com","ipAddress":"174.29.106.248","type":"calendar_change","name":"change_calendar_acls","parameters":{"calendar_id":"chandler@guildeducation.com","target_calendar_id":"chandler@guildeducation.com","grantee_email":"elysian.mcniff@gmail.com","access_level":"read","api_kind":"web","user_agent":"Mozilla/5.0"},"p_log_type":"GSuite.ActivityEvent","p_row_id":"5e63f77401a0bab398fde1db0aa935","p_event_time":"2021-06-29 13:34:51.478000000","p_parse_time":"2021-06-29 13:44:01.440272376","p_source_id":"afd514a4-9030-4d9e-a801-53a5ed994bea","p_source_label":"GSuite","p_any_domain_names":["guildeducation.com"],"p_any_ip_addresses":["174.29.106.248"],"p_any_emails":["chandler@guildeducation.com","elysian.mcniff@gmail.com"],"p_rule_id":"TEST_GCAL","p_rule_tags":[],"p_rule_reports":{},"p_alert_id":"420d2c6deeb4e9846a4823916dad7a6a","p_alert_creation_time":"2021-06-29 13:44:31.882988000","p_alert_update_time":"2021-06-29 13:44:31.882988000","p_rule_error":null,"p_alert_context":null}
+      # {"actor":{"email":"brandon.sosa@guildeducation.com","profileId":"117471791291262903872"},"i_event_time":"2021-06-23 22:07:32.834Z","i_indicator":["guildeducation.com"],"id":{"applicationName":"calendar","customerId":"C02r033ci","time":"2021-06-23 22:07:32.834000000","uniqueQualifier":"-8910320940517408338"},"ipAddress":"38.104.32.10","kind":"admin#reports#activity","name":"change_calendar_acls","ownerDomain":"guildeducation.com","p_any_domain_names":["guildeducation.com"],"p_any_emails":["__public_principal__@public.calendar.google.com","brandon.sosa@guildeducation.com"],"p_any_ip_addresses":["38.104.32.10"],"p_event_time":"2021-06-23 22:07:32.834Z","p_log_type":"GSuite.ActivityEvent","p_parse_time":"2021-06-23 22:18:01.399Z","p_row_id":"5ad35ab24b8df2da91e3d5cd0aee11","p_source_id":"afd514a4-9030-4d9e-a801-53a5ed994bea","p_source_label":"GSuite","parameters":{"access_level":"read","api_kind":"web","calendar_id":"brandon.sosa@guildeducation.com","grantee_email":"__public_principal__@public.calendar.google.com","target_calendar_id":"brandon.sosa@guildeducation.com","user_agent":"Mozilla/5.0"},"type":"calendar_change"}

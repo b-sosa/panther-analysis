@@ -2,3 +2,5 @@
 ADMIN_ROLE_ASSIGNED = "admin_role_assigned"
 FAILED_LOGIN = "failed_login"
 SUCCESSFUL_LOGIN = "successful_login"
+CRITICAL_FINDING = "Critical"
+GSUITETEST = "change_calendar_acls"

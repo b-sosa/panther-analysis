@@ -1,0 +1,18 @@
+AnalysisType: datamodel
+LogTypes: 
+  - GSuite.ActivityEvent
+DataModelID: TEST - GSUITE
+DisplayName: GSuite Calendar Events
+Filename: test-gsuite.py
+Enabled: true
+Mappings:
+  - Name: action
+    Path: $.id.name
+  - Name: grantee
+    Path: $.parameters.grantee_email
+  - Name: event_type
+    Method: get_event_type
+  - Name: key
+    Path: $.parameters.access_level
+  - Name: share
+    Path: $.actor.email
